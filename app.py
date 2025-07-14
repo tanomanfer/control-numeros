@@ -26,7 +26,7 @@ def guardar_historial(fecha, numeros, coincidencias):
         historial = pd.concat([historial, df], ignore_index=True)
     else:
         historial = df
-    historial.to_csv(HISTORIAL_FILE, index=False)
+    historial.to_csv(HISTORIAL_FILE, index=False, encoding="utf-8-sig")
 
 st.title("🎯 Control Diario de Números")
 
