@@ -92,4 +92,4 @@ elif menu == "📋 Administrar personas":
         df = df[df["Nombre"] != persona_a_eliminar]
         guardar_personas(df)
         st.success("Persona eliminada.")
-        st.experimental_rerun()
+        st.rerun()
